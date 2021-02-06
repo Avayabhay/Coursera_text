@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo Selectors</title>
+
+	<style type="text/css">
+		h2 li{
+			list-style: none;
+
+		}
+		a:link, a:visited{
+			text-decoration: none;
+			background-color: green;
+			border:1px solid blue;
+			display: block;
+			width: 150px;
+			text-align: center;
+			margin-bottom: 1px;
+
+		}
+		a:hover, a:active{
+			background-color: purple;
+			color:white;
+		}
+		section li:nth-child(odd){
+			color:grey;
+			background-color: yellow;
+
+		}
+		section li:nth-child(even):hover{
+			background-color:purple;
+			cursor: progress;
+		}
+		section li:nth-child(odd):hover{
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+	<h2>
+		<ul>
+			<li><a href="http://www.facebook.com" target="_blank">Facebook</a></li>
+			<li><a href="http://www.google.com" target="_blank">Google</a></li>
+			<li><a href="http://www.nextflix.com" target="_blank">Netflix</a></li>
+
+		</ul>
+	</h2>
+
+	<section>
+		<ul>
+			<li><div>div 1</div></li>
+			<li><div>div 2</div></li>
+			<li><div>div 3</div></li>
+			<li><div>div 4</div></li>
+			<li><div>div 5</div></li>
+			<li><div>div 6</div></li>
+			<li><div>div 7</div></li>
+			<li><div>div 8</div></li>
+			<li><div>div 9</div></li>
+			<li><div>div 10</div></li>
+			<li><div>div 11</div></li>
+
+		</ul>
+	</section>
+</body>
+</html>
