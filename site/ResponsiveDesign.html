@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Design</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		div{
+			border: solid black 1px;
+			width: 100%;
+			height: 200px;
+			background-color: red;
+
+		}
+		h2{
+			background-color: blue;
+		}
+
+		@media(min-width: 800px) and (max-width: 1199px){
+			.ml{
+				float: left;
+				width: 50%;
+				height: 200px;
+			}
+		}
+
+		@media(min-width: 1200px){
+			.dl{
+				float: left;
+				width: 25%;
+				height: 200px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<h2>This is a Responsive Design</h2>
+	<div class="dl ml">item1</div>
+	<div class="dl ml">item2</div>
+	<div class="dl ml">item3</div>
+	<div class="dl ml">item4</div>
+	<div class="dl ml">item5</div>
+	<div class="dl ml">item6</div>
+	<div class="dl ml">item7</div>
+	<div class="dl ml">item8</div>
+</body>
+</html>
